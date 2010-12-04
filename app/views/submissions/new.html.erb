@@ -1,21 +1,27 @@
-<h1>Submission details</h1>
+<h3>Please introduce yourself ...</h3>
 
 <% form_for(@submission) do |f| %>
   <%= f.error_messages %>
 
-  <div class="field">
-    <%= f.label :full_name %><br />
-    <%= f.text_field :full_name %>
-  </div>
-  <div class="field">
-    <%= f.label :department %><br />
-    <%= f.text_field :department %>
-  </div>
-  <div class="field">
-    <%= f.label :email_address %><br />
-    <%= f.text_area :email_address %>
-  </div>
-  <div class="actions">
+<%= javascript_include_tag 'form_hints' %>
+
+<div class="submission-area">
+
+  <script src="javascripts/form_hints.js" type="text/javascript"></script>
+
+	Hello, my name is	
+	<%= f.text_field :full_name, :class => "full_name" %>
+	and I am in the Department of
+	<%= f.text_field :department, :class => "department" %>
+	. I would love to join the fair. Please keep me up to date via
+	<%= f.text_field :email_address, :class => "email_address" %>
+	. Thanks!
+
+	</br></br></br>	
+	<div class="actions">
     <%= f.submit %>
-  </div>
+	</div>
+
+</div>
+
 <% end %>
