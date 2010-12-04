@@ -13,7 +13,18 @@
 	<%= f.text_field :department, :class => "department" %>
 	. I would love to join the fair. Please keep me up to date via
 	<%= f.text_field :email_address, :class => "email_address" %>
-	. Thanks!
+	. For my self and my helpers at the expo I will need
+  <div class="tshirt-sizes">	
+	<%= f.text_field :shirt_size_s, :value => 0 %>
+	small shirts,
+	<%= f.text_field :shirt_size_m, :value => 0 %>
+	medium shirts,
+	<%= f.text_field :shirt_size_l, :value => 0 %>
+	large shirts and 
+	<%= f.text_field :shirt_size_xl, :value => 0 %>
+	extra-large shirts.
+</div>
+	Thanks!
 
 	</br></br></br>	
 	<div class="actions">

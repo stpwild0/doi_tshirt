@@ -5,7 +5,11 @@
     <th>Full Name</th>
     <th>Department</th>
     <th>Email Address</th>
-    <th></th>
+		<th># Small</th>
+		<th># Medium</th>
+		<th># Large</th>
+		<th># Extra-Large</th>
+		<th></th>
     <th></th>
     <th></th>
   </tr>
@@ -14,7 +18,11 @@
   <tr>
     <td><%= sub.full_name %></td>
     <td><%= sub.department %></td>
-    <td><%= sub.email_address %></td>
+		<td><%= sub.email_address %></td>
+		<td><%= sub.shirt_size_s %></td>
+		<td><%= sub.shirt_size_m %></td>
+		<td><%= sub.shirt_size_l %></td>
+		<td><%= sub.shirt_size_xl %></td>
     <td><%= link_to 'Show', sub %></td>
     <td><%= link_to 'Destroy', sub, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
