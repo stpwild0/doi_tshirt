@@ -1,4 +1,5 @@
 DoiTshirt::Application.routes.draw do
+	root :to => 'submissions#new'
 	resources :submissions
 
 	# The priority is based upon order of creation:
