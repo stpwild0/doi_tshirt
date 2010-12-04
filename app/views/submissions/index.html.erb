@@ -10,13 +10,13 @@
     <th></th>
   </tr>
 
-<% @submissions.each do |s| %>
+<% @submissions.each do |sub| %>
   <tr>
-    <td><%= s.full_name %></td>
-    <td><%= s.department %></td>
-    <td><%= s.email_address %></td>
-    <td><%= link_to 'Show', s %></td>
-    <td><%= link_to 'Destroy', s, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= sub.full_name %></td>
+    <td><%= sub.department %></td>
+    <td><%= sub.email_address %></td>
+    <td><%= link_to 'Show', sub %></td>
+    <td><%= link_to 'Destroy', sub, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

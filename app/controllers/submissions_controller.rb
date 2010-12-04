@@ -25,7 +25,7 @@ class SubmissionsController < ApplicationController
 
 	def destroy
 		@submission = Submission.find params[:id]
-		@submission.destroy
+		@submission.destroy	
 		redirect_to submissions_url
 	end
 end

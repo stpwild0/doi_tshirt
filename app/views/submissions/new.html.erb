@@ -3,11 +3,9 @@
 <% form_for(@submission) do |f| %>
   <%= f.error_messages %>
 
-<%= javascript_include_tag 'form_hints' %>
+<%= javascript_include_tag 'jquery-1.4.4.min', 'jquery.textbox-hinter.min','form_hints' %>
 
 <div class="submission-area">
-
-  <script src="javascripts/form_hints.js" type="text/javascript"></script>
 
 	Hello, my name is	
 	<%= f.text_field :full_name, :class => "full_name" %>
