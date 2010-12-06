@@ -18,7 +18,7 @@
 
 <% @submissions.each do |sub| %>
 	<tr>
-		<td><%= sub.id %></td>
+		<td><%= link_to sub.id, sub %></td>
     <td><%= sub.full_name %></td>
 		<td><%= sub.department %></td>
 		<td><%= sub.office_address %><br/><%= sub.phone_number %><br/><%= sub.email_address %></td>

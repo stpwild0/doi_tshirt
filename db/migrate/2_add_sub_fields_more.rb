@@ -1,7 +1,7 @@
 class AddSubFieldsMore < ActiveRecord::Migration
  	def self.up
 		change_table :submissions do |t|
-			t.text :office_address
+			t.string :office_address
 			t.string :phone_number
 			t.text :small_words
 			t.text :medium_words
