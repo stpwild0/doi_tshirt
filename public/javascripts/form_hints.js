@@ -11,7 +11,32 @@ $(document).ready(function(){
 	});
   
 	$('.email_address').tbHinter({
-	  text: 'vt.edu email address',
+	  text: 'my vt.edu email address',
+		class: 'greyTextItalics'
+	});
+	
+	$('.office_address').tbHinter({
+	  text: 'my office address',
+		class: 'greyTextItalics'
+	});
+	
+	$('.phone_number').tbHinter({
+	  text: 'my phone number',
+		class: 'greyTextItalics'
+	});
+	
+	$('.small_words').tbHinter({
+	  text: 'smallest topics',
+		class: 'greyTextItalics'
+	});
+	
+	$('.medium_words').tbHinter({
+	  text: 'medium-sized topics',
+		class: 'greyTextItalics'
+	});
+	
+	$('.large_words').tbHinter({
+	  text: 'large topics',
 		class: 'greyTextItalics'
 	});
 });
