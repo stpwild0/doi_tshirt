@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 1) do
+ActiveRecord::Schema.define(:version => 2) do
 
   create_table "submissions", :force => true do |t|
     t.string  "full_name"
@@ -20,6 +20,11 @@ ActiveRecord::Schema.define(:version => 1) do
     t.integer "shirt_size_m"
     t.integer "shirt_size_l"
     t.integer "shirt_size_xl"
+    t.text    "office_address"
+    t.string  "phone_number"
+    t.text    "small_words"
+    t.text    "medium_words"
+    t.text    "large_words"
   end
 
 end
