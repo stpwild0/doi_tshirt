@@ -1,6 +1,6 @@
 h3{
 font-family: arial, sans-serif;
-font-size: "25em"
+font-size: "36em"
 }
 
 .greyTextItalics{
@@ -9,20 +9,25 @@ font-style: italic;
 }
 
 form{
+font-size: "58em"
 border-width: 5px;
-border-style: dotted;
+border-style: dashed;
 -moz-border-radius: 15px;
 border-radius: 15px;
 background-color: beige;
 padding: 25px;
-line-height: 250%;
+line-height: 200%;
 font-family: arial, sans-serif;
 }
 
-.tshirt-sizes input{
-background: orange;
+.num_input {
 text-align: right;
-width: 50px;
 }
+
+.topics{
+rows: 5
+cols: 25
+}
+
 input{
 }

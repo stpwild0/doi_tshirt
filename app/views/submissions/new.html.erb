@@ -7,36 +7,37 @@
 
 <div class="submission-area">
 
-	Hello, my name is	
-	<%= f.text_field :full_name, :class => "full_name" %>
-	and I am in the Department of
+	Hello,
+	</br></br>My name is &nbsp;	
+	<%= f.text_field :full_name, :class => "full_name" %> &nbsp;
+	and I am in the Department of &nbsp;
 	<%= f.text_field :department, :class => "department" %>
-	. I would love to join the fair to promote my research. For my contact information on the shirt please include:
-	<%= f.text_area :office_address, :class => "office_address" %>
-	, 
+	. I would love to join the fair to promote my research. For my contact information on the shirt please include: &nbsp;
+	<%= f.text_field :office_address, :class => "office_address", :rows => 3, :cols => 35 %>
+	, &nbsp;
 	<%= f.text_field :phone_number, :class => "phone_number" %>
-	, and/or
+	, and/or &nbsp;
 	<%= f.text_field :email_address, :class => "email_address" %>
-	. I have also given the key topics I would like to appear on my shirt below. For my self and my helpers at the expo I will need
-  <div class="tshirt-sizes">	
-	<%= f.text_field :shirt_size_s, :value => 0 %>
-	small shirts,
-	<%= f.text_field :shirt_size_m, :value => 0 %>
-	medium shirts,
-	<%= f.text_field :shirt_size_l, :value => 0 %>
-	large shirts and 
-	<%= f.text_field :shirt_size_xl, :value => 0 %>
+	. I have also given the key topics I would like to appear on my shirt below. For my self and my helpers at the expo I will need &nbsp; 
+		<%= f.text_field :shirt_size_s, :class => "num_input", :value => 0, :size => 2%> &nbsp;
+	small shirts, &nbsp;
+	<%= f.text_field :shirt_size_m, :class => "num_input", :value => 0, :size => 2%> &nbsp;
+	medium shirts, &nbsp;
+	<%= f.text_field :shirt_size_l, :class => "num_input", :value => 0, :size => 2 %> &nbsp;
+	large shirts, and &nbsp;
+	<%= f.text_field :shirt_size_xl, :class => "num_input", :value => 0, :size => 2%> &nbsp;
 	extra-large shirts.
-	</br>
-	Thanks!
 	</br></br>
-	<%= f.text_area :small_words, :class => "small_words" %>
-	<%= f.text_area :medium_words, :class => "medium_words" %>
-	<%= f.text_area :large_words, :class => "large_words" %>
+	Thanks!
+	</br></br>The topics I would like on the shirt are:
+	<div class="topics">
+		<%= f.text_area :small_words, :class => "small_words", :rows => 4, :cols => 30 %>
+		<%= f.text_area :medium_words, :class => "medium_words", :rows => 4, :cols => 30 %>
+		<%= f.text_area :large_words, :class => "large_words", :rows => 4, :cols => 30 %>
+  </div>
 </div>
-Thanks!
 
-	</br></br></br>	
+	</br>
 	<div class="actions">
     <%= f.submit %>
 	</div>

@@ -26,17 +26,17 @@ $(document).ready(function(){
 	});
 	
 	$('.small_words').tbHinter({
-	  text: 'smallest topics',
+	  text: 'list of smallest topics',
 		class: 'greyTextItalics'
 	});
 	
 	$('.medium_words').tbHinter({
-	  text: 'medium-sized topics',
+	  text: 'list of medium-sized topics',
 		class: 'greyTextItalics'
 	});
 	
 	$('.large_words').tbHinter({
-	  text: 'large topics',
+	  text: 'list of large topics',
 		class: 'greyTextItalics'
 	});
 });
