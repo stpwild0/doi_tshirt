@@ -8,7 +8,7 @@ color: slategray;
 font-style: italic;
 }
 
-form{
+.submission-area {
 font-size: "58em"
 border-width: 5px;
 border-style: dashed;
@@ -24,10 +24,7 @@ font-family: arial, sans-serif;
 text-align: right;
 }
 
-.topics{
-rows: 5
-cols: 25
-}
-
-input{
+table, th, td
+{
+	padding: 20px
 }

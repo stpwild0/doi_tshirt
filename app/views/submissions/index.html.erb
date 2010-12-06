@@ -1,28 +1,37 @@
 <h1>Listing posts</h1>
 
 <table>
-  <tr>
-    <th>Full Name</th>
-    <th>Department</th>
-    <th>Email Address</th>
-		<th># Small</th>
-		<th># Medium</th>
-		<th># Large</th>
-		<th># Extra-Large</th>
-		<th></th>
+	<tr>
+		<th>id</th>
+    <th>name</th>
+		<th>department</th>
+		<th>contact info</th>
+		<th># s</th>
+		<th># m</th>
+		<th># l</th>
+		<th># xl</th>
+		<th>Wordle</th>
+    <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @submissions.each do |sub| %>
-  <tr>
+	<tr>
+		<td><%= sub.id %></td>
     <td><%= sub.full_name %></td>
-    <td><%= sub.department %></td>
-		<td><%= sub.email_address %></td>
+		<td><%= sub.department %></td>
+		<td><%= sub.office_address %><br/><%= sub.phone_number %><br/><%= sub.email_address %></td>
 		<td><%= sub.shirt_size_s %></td>
 		<td><%= sub.shirt_size_m %></td>
 		<td><%= sub.shirt_size_l %></td>
 		<td><%= sub.shirt_size_xl %></td>
+		<td><form action="http://www.wordle.net/advanced" method="POST">
+    <textarea name="wordcounts" style="display:none">
+    <%= sub.cloud_output %>
+    </textarea>
+    <input value="Click" type="submit">
+</form></td>
     <td><%= link_to 'Show', sub %></td>
     <td><%= link_to 'Destroy', sub, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>

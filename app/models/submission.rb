@@ -1,6 +1,5 @@
 class Submission < ActiveRecord::Base
 	
-	validates :email_address, :presence => true
 	validates :full_name, :presence => true
 	validates :department, :presence => true
 	
@@ -10,18 +9,28 @@ class Submission < ActiveRecord::Base
   validates :shirt_size_xl, :presence => true, :numericality => {:only_integer => true, :greater_than => -1}
   
 	def cloud_output
-	  output = cloud_converter small_words, 20
-    output << cloud_converter(medium_words, 40)
-		output << cloud_converter(large_words, 80)
+		output = ''
+		if small_words != nil then output << cloud_converter(small_words, 20) end
+		if medium_words != nil then output << cloud_converter(medium_words, 40) end
+		if large_words != nil then output << cloud_converter(large_words, 80) end
 		output
+	end
+
+	def contact_info
+	  output = ''
+		if office_address != nil then output << (office_address + "<br/>") end
+		if phone_number != nil then output << (phone_number + "<br/>") end
+		if email_address != nil then output << (phone_number + '<br/>') end
+		output = output.rstrip
 	end
   
   def cloud_converter raw, size
 	  output = ''
     array = array_of_words raw
 		array.each do |word|
+			randomized_size = size + rand(11)
 		  output << word
-			output << ":" + size.to_s + "\n"
+			output << ":" + randomized_size.to_s + "\n"
 		end
 	
 		output

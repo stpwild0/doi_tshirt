@@ -1,15 +1,15 @@
 class SubmissionsController < ApplicationController
-	
 	def index
 		@submissions = Submission.all
 	end
 	
 	def create
 		@submission = Submission.new  params[:submission]
-
+    
 		if @submission.save
-			redirect_to @submission,
-				:notice => 'new'
+			redirect_to '/submissions/thanks.html'
+			#redirect_to @submission,
+			#	:notice => 'new'
 		else
 			render :action => 'new'
 		end
