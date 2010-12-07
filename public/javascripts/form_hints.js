@@ -11,7 +11,7 @@ $(document).ready(function(){
 	});
   
 	$('.email_address').tbHinter({
-	  text: 'my vt.edu email address',
+	  text: 'my email address',
 		class: 'greyTextItalics'
 	});
 	

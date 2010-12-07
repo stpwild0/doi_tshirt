@@ -37,7 +37,10 @@ font-size: .8em;
 	text-align: center;	
 }
 .actions input {
-
+height: 1em;
+font-size: 45px;
+font-family: arial, sans-serif;
+margin: 40px;
 }
 
 body{
