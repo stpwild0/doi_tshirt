@@ -9,16 +9,16 @@
 
 	Hello,
 	</br></br>My name is &nbsp;	
-	<%= f.text_field :full_name, :class => "full_name" %> &nbsp;
+	<%= f.text_field :full_name, :class => "full_name", :size => 15 %> &nbsp;
 	and I am in the Department of &nbsp;
-	<%= f.text_field :department, :class => "department" %>
+	<%= f.text_field :department, :class => "department", :size => 15 %>
 	. I would love to join the fair to promote my research. For my contact information on the shirt please include: &nbsp;
-	<%= f.text_field :office_address, :class => "office_address", :rows => 3, :cols => 35 %>
+	<%= f.text_field :office_address, :class => "office_address", :size => 35 %>
 	, &nbsp;
-	<%= f.text_field :phone_number, :class => "phone_number" %>
+	<%= f.text_field :phone_number, :class => "phone_number", :size => 15 %>
 	, and/or &nbsp;
 	<%= f.text_field :email_address, :class => "email_address" %>
-	. I have also given the key topics I would like to appear on my shirt below. For my self and my helpers at the expo I will need &nbsp; 
+	. I have also given the key research topics I would like to appear on my shirt below. For myself and my helpers at the expo I will need &nbsp; 
 		<%= f.text_field :shirt_size_s, :class => "num_input", :value => 0, :size => 2%> &nbsp;
 	small shirts, &nbsp;
 	<%= f.text_field :shirt_size_m, :class => "num_input", :value => 0, :size => 2%> &nbsp;
@@ -31,9 +31,9 @@
 	Thanks!
 	</br></br>The topics I would like on the shirt are:
 	<div class="topics">
-		<%= f.text_area :small_words, :class => "small_words", :rows => 4, :cols => 30 %>
-		<%= f.text_area :medium_words, :class => "medium_words", :rows => 4, :cols => 30 %>
 		<%= f.text_area :large_words, :class => "large_words", :rows => 4, :cols => 30 %>
+		<%= f.text_area :medium_words, :class => "medium_words", :rows => 4, :cols => 30 %>
+		<%= f.text_area :small_words, :class => "small_words", :rows => 4, :cols => 30 %>
   </div>
 </div>
 

@@ -7,9 +7,8 @@ class SubmissionsController < ApplicationController
 		@submission = Submission.new  params[:submission]
     
 		if @submission.save
-			redirect_to '/submissions/thanks.html'
-			#redirect_to @submission,
-			#	:notice => 'new'
+			redirect_to @submission,
+			:notice => 'new'
 		else
 			render :action => 'new'
 		end

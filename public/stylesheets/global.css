@@ -1,23 +1,49 @@
 h3{
 font-family: arial, sans-serif;
-font-size: "36em"
+font-size: 2.5em;
 }
 
 .greyTextItalics{
-color: slategray;
+color: dimgray;
 font-style: italic;
 }
 
 .submission-area {
-font-size: "58em"
-border-width: 5px;
-border-style: dashed;
+font-size: 2em;
 -moz-border-radius: 15px;
+width: 75%;
+margin-left: auto;
+margin-right: auto;
 border-radius: 15px;
-background-color: beige;
+background-color: lightcyan;
 padding: 25px;
-line-height: 200%;
+line-height: 150%;
 font-family: arial, sans-serif;
+}
+
+input {
+border: 2px dashed #D1C7AC;
+height: 1em;
+font-size: 1em;
+}
+
+.topics textarea {
+margin: 10px;
+border: 2px dashed #D1C7AC;
+height: 200px;
+font-size: .4em;
+}
+
+.actions
+{
+	text-align: center;	
+}
+.actions input {
+
+}
+
+body{
+background-color: cornsilk;
 }
 
 .num_input {
@@ -26,5 +52,5 @@ text-align: right;
 
 table, th, td
 {
-	padding: 20px
+padding: 20px
 }
