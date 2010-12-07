@@ -11,12 +11,15 @@
 	Hello,
 	</br></br>I hear people call you	
  	<%= f.text_field :full_name, :class => "full_name", :size => 15 %> .&nbsp;
-	</br>You also seem to be in the Department of
+	</br>and you seem to be in the Department of
 	<%= f.text_field :department, :class => "department", :size => 15 %>
+  . Please include my contact info on the shirt: 
+	<%= f.text_field	:office_address, :class => "office_address", :size => 20 %>
+  , 
 	<%= f.text_field :phone_number, :class => "phone_number", :size => 15 %>
 	, and/or &nbsp;
 	<%= f.text_field :email_address, :class => "email_address" %>
-	. I have also given the key research topics I would like to appear on my shirt below. For myself and my helpers at the expo I will need &nbsp; 
+	. I have also given the key research topics I would like to appear on my shirt below. For myself and my helpers at the expo I will need &nbsp;  
 		<%= f.text_field :shirt_size_s, :class => "num_input", :value => 0, :size => 2%> &nbsp;
 	small shirts, &nbsp;
 	<%= f.text_field :shirt_size_m, :class => "num_input", :value => 0, :size => 2%> &nbsp;

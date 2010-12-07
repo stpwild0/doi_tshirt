@@ -17,11 +17,10 @@ class Submission < ActiveRecord::Base
 	end
 
 	def contact_info
-	  output = ''
-		if office_address != nil then output << (office_address + "<br/>") end
-		if phone_number != nil then output << (phone_number + "<br/>") end
-		if email_address != nil then output << (phone_number + '<br/>') end
-		output = output.rstrip
+	  output = [] 
+		if office_address != nil then output << office_address end
+		if phone_number != nil then output << phone_number end
+		if email_address != nil then output << email_address end
 	end
   
   def cloud_converter raw, size

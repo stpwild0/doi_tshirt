@@ -21,7 +21,9 @@
 		<td><%= link_to sub.id, sub %></td>
     <td><%= sub.full_name %></td>
 		<td><%= sub.department %></td>
-		<td><%= sub.office_address %><br/><%= sub.phone_number %><br/><%= sub.email_address %></td>
+		<td><% sub.contact_info.each do |contact_line| %>
+				<%= contact_line %><br/>
+			<% end %></td>
 		<td><%= sub.shirt_size_s %></td>
 		<td><%= sub.shirt_size_m %></td>
 		<td><%= sub.shirt_size_l %></td>
