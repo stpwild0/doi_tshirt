@@ -1,6 +1,4 @@
-h1{
-font-family: arial, sans-serif;
-font-size: 2.5em;
+h1{ font-family: arial, sans-serif; font-size: 2.5em;
 }
 
 .greyTextItalics{
@@ -31,7 +29,7 @@ font-size: 1em;
 margin: 10px;
 border: 2px dashed #D1C7AC;
 height: 200px;
-font-size: .4em;
+font-size: .8em;
 }
 
 .actions
